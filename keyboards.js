@@ -7,8 +7,8 @@ const data = require('./helpers/stopNames.json')
 
 export function getStopsMenu() {
     const keyboard = Keyboard.make([
-        ['Из Yesildere'],
-        ['С пляжа'],
+        ['Из Yesildere', 'С пляжа'],
+        ['Из Mark Antalya', 'От кладбища']
       ])
       console.log(data.default)
     return keyboard

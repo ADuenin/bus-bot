@@ -13,6 +13,20 @@
             "name": "KONYAALTI PLAJI",
             "lat": "36.8846748",
             "lng": "30.6801053"
+        },
+        {
+            "routeType": "3",
+            "stopId": "13789",
+            "name": "ADNAN MENDERES BLV-3",
+            "lat": "36.8846748",
+            "lng": "30.6801053"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10366",
+            "name": "MARKANTALYA -1",
+            "lat": "36.8846748",
+            "lng": "30.6801053"
         }
     ]
 }

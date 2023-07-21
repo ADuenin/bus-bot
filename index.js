@@ -30,6 +30,16 @@ bot.hears('С пляжа', ctx => {
   getResult(ctx, stopId)
 })
 
+bot.hears('Из Mark Antalya', ctx => {
+  stopId = '10366'
+  getResult(ctx, stopId)
+})
+
+bot.hears('От кладбища', ctx => {
+  stopId = '13789'
+  getResult(ctx, stopId)
+})
+
 bot.action('fromYesildere', (ctx) => {
   stopId = '14271'
   getResult(ctx, stopId)
