@@ -1,0 +1,18 @@
+{
+    "stopList": [
+        {
+            "routeType": "3",
+            "stopId": "14271",
+            "name": "YEŞİLDERE MH-1",
+            "lat": "36.9063041",
+            "lng": "30.7301291"
+        },
+        {
+            "routeType": "3",
+            "stopId": "13698",
+            "name": "KONYAALTI PLAJI",
+            "lat": "36.8846748",
+            "lng": "30.6801053"
+        }
+    ]
+}

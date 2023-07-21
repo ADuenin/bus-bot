@@ -1,0 +1,16 @@
+{
+  "name": "bus-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Duenin",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^4.12.2",
+    "telegram-keyboard": "^2.3.2"
+  }
+}
