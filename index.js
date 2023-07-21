@@ -56,7 +56,7 @@ bot.on(message('text'), async (ctx) => {
   ctx.sendMessage('Не знаю такого маршрута')
 });
 
-cron.schedule("*/1 * * * *", () => {
+cron.schedule("*/10 * * * *", () => {
   const options = {
     hostname: "www.w3.org",
     path: "/account/user-menu/",
