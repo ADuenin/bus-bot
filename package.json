@@ -10,6 +10,7 @@
   "author": "Anton Duenin",
   "license": "ISC",
   "dependencies": {
+    "node-cron": "^3.0.2",
     "telegraf": "^4.12.2",
     "telegram-keyboard": "^2.3.2"
   }

@@ -2,6 +2,8 @@ import { Telegraf } from 'telegraf';
 import { message } from 'telegraf/filters';
 import { getBuses } from './getBuses.js';
 import { getStopsInlineMenu, getStopsMenu } from './keyboards.js';
+import cron from "node-cron";
+import https from "https"
 
 const key = process.env.SECRET_KEY
 const bot = new Telegraf(key);
@@ -53,6 +55,34 @@ bot.action('fromBeach', (ctx) => {
 bot.on(message('text'), async (ctx) => {
   ctx.sendMessage('Не знаю такого маршрута')
 });
+
+cron.schedule("*/1 * * * *", () => {
+  const options = {
+    hostname: "www.w3.org",
+    path: "/account/user-menu/",
+    method: "GET",
+  };
+
+  const request = https.request(options, (response) => {
+    let data = "";
+
+    response.on("data", (chunk) => {
+      data += chunk;
+    });
+
+    response.on("end", () => {
+      console.log(data + 'response');
+    });
+  });
+
+  request.on("error", (error) => {
+    console.error(`Произошла ошибка: ${error.message}`);
+  });
+
+  request.end();
+
+});
+
 
 bot.launch();
 
