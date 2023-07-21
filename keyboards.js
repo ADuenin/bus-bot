@@ -1,6 +1,9 @@
 import { Markup } from 'telegraf'
 import { Keyboard } from 'telegram-keyboard'
-import * as data from './helpers/stopNames.json' assert { type: "json" };
+//import * as data from './helpers/stopNames.json' assert { type: "json" };
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const data = require('./helpers/stopNames.json')
 
 export function getStopsMenu() {
     const keyboard = Keyboard.make([
